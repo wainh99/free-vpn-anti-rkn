@@ -1,7 +1,7 @@
 # 🔒 VPN подписки без лагов — обход блокировок
 
 <p align="center">
-  <a href="https://hidashimora.github.io/free-vpn-anti-rkn/">
+  <a href="https://wainh99.github.io/free-vpn-anti-rkn/free-vpn-anti-rkn/">
     <img src="https://img.shields.io/badge/Перейти_на_сайт—подписки_без_лагов-06b6d4?style=for-the-badge&labelColor=0c4a6e" alt="Перейти на сайт" height="120" />
   </a>
 </p>
@@ -58,7 +58,7 @@ README.md
 
 ## 🚀 Быстрый старт
 
-1. Откройте [главную страницу](https://hidashimora.github.io/free-vpn-anti-rkn/) или скопируйте нужную ссылку из таблицы в разделе «Ссылки на подписки».
+1. Откройте [главную страницу](https://wainh99.github.io/free-vpn-anti-rkn/free-vpn-anti-rkn/) или скопируйте нужную ссылку из таблицы в разделе «Ссылки на подписки».
 2. В VPN-клиенте добавьте подписку по URL (меню «Подписка» / «Subscription» / «Импорт по ссылке»).
 3. Выполните обновление списка; при необходимости запустите проверку задержки (пинга).
 4. Выберите сервер и установите подключение.
@@ -70,73 +70,73 @@ README.md
 
 В каждом **коротком** файле — не более 300 конфигов из соответствующего источника. **Полные** списки (№1.2–№26.2 и №28.2, №32.2, №33.2) — все серверы источника (не рекомендовано: могут тормозить устройство). Учитываются только строки с протоколами **vless**, **trojan**, **vmess**, **ss**, **hy2**. Списки 1–26 — [AvenCores/goida-vpn-configs](https://github.com/AvenCores/goida-vpn-configs); 27–34 — [igareck/vpn-configs-for-russia](https://github.com/igareck/vpn-configs-for-russia). Для источников 28, 32, 33 (BLACK_VLESS_RUS, WHITE-CIDR-RU-all, WHITE-CIDR-RU-checked) — короткий №N.1 и полный №N.2.
 
-Базовый URL: `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/`
+Базовый URL: `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/`
 
 | № | Raw-ссылка |
 |---|------------|
-| 1.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/1.1.txt` |
-| 1.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/1.2.txt` |
-| 2.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/2.1.txt` |
-| 2.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/2.2.txt` |
-| 3.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.1.txt` |
-| 3.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/3.2.txt` |
-| 4.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/4.1.txt` |
-| 4.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/4.2.txt` |
-| 5.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/5.1.txt` |
-| 5.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/5.2.txt` |
-| 6.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/6.1.txt` |
-| 6.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/6.2.txt` |
-| 7.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/7.1.txt` |
-| 7.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/7.2.txt` |
-| 8.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/8.1.txt` |
-| 8.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/8.2.txt` |
-| 9.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/9.1.txt` |
-| 9.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/9.2.txt` |
-| 10.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/10.1.txt` |
-| 10.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/10.2.txt` |
-| 11.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/11.1.txt` |
-| 11.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/11.2.txt` |
-| 12.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/12.1.txt` |
-| 12.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/12.2.txt` |
-| 13.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/13.1.txt` |
-| 13.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/13.2.txt` |
-| 14.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/14.1.txt` |
-| 14.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/14.2.txt` |
-| 15.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/15.1.txt` |
-| 15.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/15.2.txt` |
-| 16.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/16.1.txt` |
-| 16.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/16.2.txt` |
-| 17.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/17.1.txt` |
-| 17.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/17.2.txt` |
-| 18.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/18.1.txt` |
-| 18.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/18.2.txt` |
-| 19.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/19.1.txt` |
-| 19.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/19.2.txt` |
-| 20.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/20.1.txt` |
-| 20.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/20.2.txt` |
-| 21.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/21.1.txt` |
-| 21.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/21.2.txt` |
-| 22.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/22.1.txt` |
-| 22.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/22.2.txt` |
-| 23.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/23.1.txt` |
-| 23.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/23.2.txt` |
-| 24.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/24.1.txt` |
-| 24.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/24.2.txt` |
-| 25.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/25.1.txt` |
-| 25.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/25.2.txt` |
-| 26.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/26.1.txt` |
-| 26.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/26.2.txt` |
-| 27 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/27.txt` |
-| 28.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/28.1.txt` |
-| 28.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/28.2.txt` |
-| 29 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/29.txt` |
-| 30 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/30.txt` |
-| 31 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/31.txt` |
-| 32.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/32.1.txt` |
-| 32.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/32.2.txt` |
-| 33.1 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/33.1.txt` |
-| 33.2 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/33.2.txt` |
-| 34 | `https://raw.githubusercontent.com/Hidashimora/free-vpn-anti-rkn/main/configs/34.txt` |
+| 1.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/1.1.txt` |
+| 1.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/1.2.txt` |
+| 2.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/2.1.txt` |
+| 2.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/2.2.txt` |
+| 3.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/3.1.txt` |
+| 3.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/3.2.txt` |
+| 4.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/4.1.txt` |
+| 4.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/4.2.txt` |
+| 5.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/5.1.txt` |
+| 5.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/5.2.txt` |
+| 6.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/6.1.txt` |
+| 6.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/6.2.txt` |
+| 7.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/7.1.txt` |
+| 7.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/7.2.txt` |
+| 8.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/8.1.txt` |
+| 8.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/8.2.txt` |
+| 9.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/9.1.txt` |
+| 9.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/9.2.txt` |
+| 10.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/10.1.txt` |
+| 10.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/10.2.txt` |
+| 11.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/11.1.txt` |
+| 11.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/11.2.txt` |
+| 12.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/12.1.txt` |
+| 12.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/12.2.txt` |
+| 13.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/13.1.txt` |
+| 13.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/13.2.txt` |
+| 14.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/14.1.txt` |
+| 14.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/14.2.txt` |
+| 15.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/15.1.txt` |
+| 15.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/15.2.txt` |
+| 16.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/16.1.txt` |
+| 16.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/16.2.txt` |
+| 17.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/17.1.txt` |
+| 17.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/17.2.txt` |
+| 18.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/18.1.txt` |
+| 18.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/18.2.txt` |
+| 19.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/19.1.txt` |
+| 19.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/19.2.txt` |
+| 20.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/20.1.txt` |
+| 20.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/20.2.txt` |
+| 21.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/21.1.txt` |
+| 21.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/21.2.txt` |
+| 22.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/22.1.txt` |
+| 22.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/22.2.txt` |
+| 23.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/23.1.txt` |
+| 23.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/23.2.txt` |
+| 24.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/24.1.txt` |
+| 24.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/24.2.txt` |
+| 25.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/25.1.txt` |
+| 25.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/25.2.txt` |
+| 26.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/26.1.txt` |
+| 26.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/26.2.txt` |
+| 27 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/27.txt` |
+| 28.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/28.1.txt` |
+| 28.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/28.2.txt` |
+| 29 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/29.txt` |
+| 30 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/30.txt` |
+| 31 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/31.txt` |
+| 32.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/32.1.txt` |
+| 32.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/32.2.txt` |
+| 33.1 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/33.1.txt` |
+| 33.2 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/33.2.txt` |
+| 34 | `https://raw.githubusercontent.com/wainh99/free-vpn-anti-rkn/main/configs/34.txt` |
 
 ---
 
