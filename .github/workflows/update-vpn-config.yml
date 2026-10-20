@@ -18,43 +18,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch and reduce all 26 lists (1/4 configs each, max 300)
+      - name: Fetch free-nodes/v2rayfree as slot 1 (replaces dead 1-26 upstream)
         run: |
           mkdir -p configs
-          BASE="https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/refs/heads/main/githubmirror"
           MAX=300
-          printf 'OpenRay\n5ubscrpt10n\nproxy-minging\nAutoVPN\nV2RayCFGDumper\nopenproxylist\nv2ray-configs\ncid-vpn-config\ntelegram-v2ray-configs\n.proxy\nV2rayCollector\n.proxy\nconfig\nMineral\nConfig-Collector\nFree-servers\nV2rayCollector_Py\nv2ray\nV2rayCollector\nProxy-List\nkamaji\nxray-config-toolkit\nXray\nSTRUGOV\nV2RayConfig\nОбход SNI/CIDR\n' > names_aven.txt
-          for i in $(seq 1 26); do
-            curl -sLf "${BASE}/${i}.txt" -o full.txt || true
-            touch full.txt
-            grep -E '^(vless|trojan|vmess|ss|hy2)://' full.txt > filtered.txt || true
-            if [ "$i" -eq 26 ]; then grep -v '\.ru' filtered.txt > filtered2.txt && mv filtered2.txt filtered.txt; fi
-            N=$(wc -l < filtered.txt)
-            if [ "$N" -eq 0 ]; then
-              cp filtered.txt new.txt
-            elif [ "$N" -lt "$MAX" ]; then
-              cp filtered.txt new.txt
-            else
-              quarter=$((N / 4))
-              if [ "$quarter" -le "$MAX" ]; then
-                awk 'NR % 4 == 1' filtered.txt > new.txt
-              else
-                awk -v T="$N" -v target="$MAX" 'int((NR-1)*target/T) != int((NR-2)*target/T)' filtered.txt > new.txt
-              fi
-            fi
-            if [ ! -s new.txt ] && [ -s filtered.txt ]; then
-              cp filtered.txt new.txt
-            fi
-            if [ -s new.txt ]; then
-              name=$(sed -n "${i}p" names_aven.txt)
-              f="${i}.1.txt"
-              echo "# Подписка $f | $name (короткий)" > "configs/$f"
-              cat new.txt >> "configs/$f"
-              echo "  configs/$f: $(wc -l < new.txt) servers"
-            else
-              echo "  configs/${i}.1.txt: no configs, skipped"
-            fi
-          done
+          curl -sLf "https://raw.githubusercontent.com/free-nodes/v2rayfree/main/sub" -o sub.b64 || true
+          touch sub.b64
+          base64 -d sub.b64 > full.txt 2>/dev/null || true
+          touch full.txt
+          grep -E '^(vless|trojan|vmess|ss|hy2)://' full.txt > filtered.txt || true
+          N=$(wc -l < filtered.txt)
+          if [ "$N" -eq 0 ] || [ "$N" -lt "$MAX" ]; then
+            cp filtered.txt new.txt
+          else
+            awk -v T="$N" -v target="$MAX" 'int((NR-1)*target/T) != int((NR-2)*target/T)' filtered.txt > new.txt
+          fi
+          if [ ! -s new.txt ] && [ -s filtered.txt ]; then cp filtered.txt new.txt; fi
+          if [ -s new.txt ]; then
+            echo "# Подписка 1.1 | free-nodes/v2rayfree (короткий)" > "configs/1.1.txt"
+            cat new.txt >> "configs/1.1.txt"
+            echo "  configs/1.1.txt: $(wc -l < new.txt) servers"
+          else
+            echo "  configs/1.1.txt: no configs, skipped"
+          fi
 
       - name: Fetch igareck/vpn-configs-for-russia (27–34); 28/32/33 as N.1+N.2
         run: |
@@ -106,26 +92,21 @@ jobs:
             n=$((n + 1))
           done
 
-      - name: Fetch full lists (1.2, 2.2, …, 26.2) from AvenCores — только для 1–26
+      - name: Fetch full list (1.2) from free-nodes/v2rayfree
         run: |
-          BASE="https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/refs/heads/main/githubmirror"
-          printf 'OpenRay\n5ubscrpt10n\nproxy-minging\nAutoVPN\nV2RayCFGDumper\nopenproxylist\nv2ray-configs\ncid-vpn-config\ntelegram-v2ray-configs\n.proxy\nV2rayCollector\n.proxy\nconfig\nMineral\nConfig-Collector\nFree-servers\nV2rayCollector_Py\nv2ray\nV2rayCollector\nProxy-List\nkamaji\nxray-config-toolkit\nXray\nSTRUGOV\nV2RayConfig\nОбход\n' > names_aven.txt
-          for i in $(seq 1 26); do
-            curl -sLf "${BASE}/${i}.txt" -o full.txt || true
-            touch full.txt
-            grep -E '^(vless|trojan|vmess|ss|hy2)://' full.txt > filtered.txt || true
-            if [ "$i" -eq 26 ]; then grep -v '\.ru' filtered.txt > filtered2.txt && mv filtered2.txt filtered.txt; fi
-            name=$(sed -n "${i}p" names_aven.txt)
-            f="${i}.2.txt"
-            echo "# Подписка $f | $name (полный)" > "configs/$f"
-            cat filtered.txt >> "configs/$f"
-            echo "  configs/$f: $(wc -l < filtered.txt) servers"
-          done
+          curl -sLf "https://raw.githubusercontent.com/free-nodes/v2rayfree/main/sub" -o sub.b64 || true
+          touch sub.b64
+          base64 -d sub.b64 > full.txt 2>/dev/null || true
+          touch full.txt
+          grep -E '^(vless|trojan|vmess|ss|hy2)://' full.txt > filtered.txt || true
+          echo "# Подписка 1.2 | free-nodes/v2rayfree (полный)" > "configs/1.2.txt"
+          cat filtered.txt >> "configs/1.2.txt"
+          echo "  configs/1.2.txt: $(wc -l < filtered.txt) servers"
 
       - name: Generate counts.json (per-config and total unique servers)
         run: |
           echo '{' > configs/counts.json
-          for i in $(seq 1 26); do
+          for i in 1; do
             for s in 1 2; do
               key="${i}.${s}"
               c=0
@@ -146,7 +127,7 @@ jobs:
               echo "  \"$key\": ${c:-0}," >> configs/counts.json
             done
           done
-          total=$( ( for i in $(seq 1 26); do for s in 1 2; do [ -f "configs/${i}.${s}.txt" ] && grep -E '^(vless|trojan|vmess|ss|hy2)://' "configs/${i}.${s}.txt"; done; done; for i in 27 29 30 31 34; do [ -f "configs/${i}.txt" ] && grep -E '^(vless|trojan|vmess|ss|hy2)://' "configs/${i}.txt"; done; for i in 28 32 33; do for s in 1 2; do [ -f "configs/${i}.${s}.txt" ] && grep -E '^(vless|trojan|vmess|ss|hy2)://' "configs/${i}.${s}.txt"; done; done ) 2>/dev/null | sort -u | wc -l)
+          total=$( ( for i in 1; do for s in 1 2; do [ -f "configs/${i}.${s}.txt" ] && grep -E '^(vless|trojan|vmess|ss|hy2)://' "configs/${i}.${s}.txt"; done; done; for i in 27 29 30 31 34; do [ -f "configs/${i}.txt" ] && grep -E '^(vless|trojan|vmess|ss|hy2)://' "configs/${i}.txt"; done; for i in 28 32 33; do for s in 1 2; do [ -f "configs/${i}.${s}.txt" ] && grep -E '^(vless|trojan|vmess|ss|hy2)://' "configs/${i}.${s}.txt"; done; done ) 2>/dev/null | sort -u | wc -l)
           echo "  \"totalUnique\": $total" >> configs/counts.json
           echo '}' >> configs/counts.json
           echo "  totalUnique: $total servers (no duplicates)"
